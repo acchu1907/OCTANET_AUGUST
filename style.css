@@ -1,7 +1,7 @@
 *{
    margin:0;
    padding: 0;
-   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    box-sizing:border-box;
 
 }
@@ -12,13 +12,194 @@ html,body{
 }
 #main{
     width: 100%;
-    min-height: 100vh;
+    min-height: 60vh;
 
 }
-.top{
-    width: 100%;
-    min-height: 60%;
-    background-image: url(https://images.hdqwalls.com/wallpapers/landscape-alpine-mountains-landscape-5k-1k.jpg);
-    background-size: cover ;
+.top{    
+    width: 100%; 
+    min-height:inherit;
+    background-image: url(https://e0.pxfuel.com/wallpapers/126/937/desktop-wallpaper-cherry-pattern-for-walls-fruit-pattern.jpg);
+    background-size: 1000px ;
     background-position: center;
+}
+.top .overlay{
+    position: relative;
+    width:100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.089);
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width:100%;
+    padding :0 4vh;
+    color:rgb(29, 3, 37);
+    bottom: 5%;
+
+}
+.text .h1{
+    font-weight: 300;
+    font-size: 8vw;
+
+}
+.text .image{
+    background-image: url(https://i.pinimg.com/564x/b8/ad/ba/b8adba5701f88b6b5a0df542c4ea3794.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    width: 300px;
+
+}
+.rtext{
+    display:flex;
+    width: 25%;
+    justify-content:space-between;
+    align-items:center;
+
+
+}
+.rtext{
+    font-size: 15px;
+}
+.bottom{
+    display: flex;
+    width:100%;
+    min-height:40vh;
+    
+}
+.b1{
+    width: 40%;
+    min-height: 80vh;
+    background-image: url(https://i.pinimg.com/564x/f6/92/f9/f692f973efd36db9c7f1c685e515cce0.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.b1 h1{
+    text-align: center;
+    padding: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 70;
+    color:black;
+}
+.b1 p{
+    color:black;
+    text-align: center;
+    padding:13px;
+}
+.b2{
+    width: 40%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+
+}
+.b2 h1{
+    text-align: center;
+    padding: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50;
+    color:white;
+}
+.b2 p{
+    color: white;
+    text-align: center;
+    padding:13px;
+}
+
+.b2 .up{
+    width:100%;
+    min-height: 40vh;
+    background-image: url(https://i.pinimg.com/564x/28/4c/a8/284ca8eb71d23d8bf6c5fb3dc63f318f.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.b2 .down{
+    width: 100%;
+    min-height: 40vh;
+    background-image: url(https://i.pinimg.com/564x/bc/20/03/bc20031d9ea4831c0ba07d0956dbf41e.jpg);
+    background-size: cover;
+    background-position: center;
+
+
+}
+.b2 .down .overlay{
+    position: relative;
+    width:100%;
+    min-height: 40vh;
+    background-color: rgb(255, 255, 255,0.344);
+
+}
+
+.b3{
+    width: 40%;
+    min-height: inherit;
+    background-image: url(https://i.pinimg.com/564x/25/57/86/255786cf6791ccdaade25c5c08f11404.jpg);
+    background-position: center;
+    background-size: cover;
+
+
+}
+.b3 .overlay{
+    justify-content: right;
+    position: relative;
+    margin-left: 50%;
+    width:50%;
+    height:100%;
+    padding: 4vh 4vh;
+
+}
+.b3 .overlay p{
+    padding:1.2vh;
+}
+@media(max-width:700px){
+    .text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text h1{
+        font-size: 5vh;
+
+    }
+    .text .image{
+        height: 200px;
+        width:140px;
+        margin-top: 20px;
+
+
+    }
+    .rtext{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .icon{
+        margin-top: 10px;
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .b1{
+        width: 100%;
+        min-height: 30vh;
+        
+    }
+    .b2{
+        width: 100%;
+     
+        
+    }
+    .b2 .up{
+        min-height: 30vh;
+    }
+    .b3{
+        width: 100%;
+        background-position: left;
+        
+    }
+    
+    
 }
